@@ -23,7 +23,7 @@ const Main = () => {
 
       try {
         const response = await fetch(
-          `https://ipdo-ip-discovery-and-open-ports-backend.onrender.com`
+          `http://localhost:3000/api/shodan/${ipAddress}`
         );
         const data = await response.json();
 
